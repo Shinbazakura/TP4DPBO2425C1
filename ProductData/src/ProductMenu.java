@@ -74,15 +74,15 @@ public class ProductMenu extends JFrame {
         titleLabel.setFont(titleLabel.getFont().deriveFont(Font.BOLD, 20f));
 
         // atur isi combo box
-        String[] genreData = {"???", "Programming", "Fantasy", "Self-Help", "Finance"};
+        String[] genreData = {"???", "Programming", "Fantasy", "Self-Help", "Finance", "Classic Literature", "Epic Poetry", "Philosophy", "Sci-Fi"};
         genreComboBox.setModel(new DefaultComboBoxModel<>(genreData));
         String[] formatData = {"???", "Hardcover", "Paperback", "eBook", "Audiobook"};
         formatComboBox.setModel(new DefaultComboBoxModel<>(formatData));
 
         // prepare slider
         // define year limit
-        int startYear = 1990;
-        int endYear = 2030;
+        int startYear = 1800;
+        int endYear = 2050;
         int defaultValue = 2025;
         // Create slider
         tahunTerbitSlider.setMinimum(startYear);
@@ -90,8 +90,8 @@ public class ProductMenu extends JFrame {
         tahunTerbitSlider.setValue(defaultValue); // default year
         tahunTerbitSlider.setPaintTicks(true);
         tahunTerbitSlider.setPaintLabels(true);
-        tahunTerbitSlider.setMajorTickSpacing(5);
-        tahunTerbitSlider.setMinorTickSpacing(1);
+        tahunTerbitSlider.setMajorTickSpacing(50);
+        tahunTerbitSlider.setMinorTickSpacing(10);
 
         curYearLabel.setText("Tahun: " + defaultValue);
 
@@ -360,5 +360,126 @@ public class ProductMenu extends JFrame {
                 2020,
                 "Paperback"
         ));
+
+        listProduct.add(new Product(
+                "B006",
+                "Pride and Prejudice",
+                250000.0,
+                "Classic Literature",
+                "Jane Austen",
+                1813,
+                "Hardcover"
+        ));
+
+        listProduct.add(new Product(
+                "B007",
+                "1984",
+                270000.0,
+                "Classic Literature",
+                "George Orwell",
+                1949,
+                "Paperback"
+        ));
+
+        listProduct.add(new Product(
+                "B008",
+                "To Kill a Mockingbird",
+                260000.0,
+                "Classic Literature",
+                "Harper Lee",
+                1960,
+                "Paperback"
+        ));
+
+        listProduct.add(new Product(
+                "B009",
+                "The Great Gatsby",
+                240000.0,
+                "Classic Literature",
+                "F. Scott Fitzgerald",
+                1925,
+                "Paperback"
+        ));
+
+        listProduct.add(new Product(
+                "B010",
+                "Moby-Dick; or, The Whale",
+                280000.0,
+                "Classic Literature",
+                "Herman Melville",
+                1851,
+                "Hardcover"
+        ));
+
+        listProduct.add(new Product(
+                "B011",
+                "Crime and Punishment",
+                300000.0,
+                "Classic Literature",
+                "Fyodor Dostoevsky",
+                1866,
+                "Paperback"
+        ));
+
+        listProduct.add(new Product(
+                "B012",
+                "The Catcher in the Rye",
+                250000.0,
+                "Classic Literature",
+                "J.D. Salinger",
+                1951,
+                "Paperback"
+        ));
+
+        listProduct.add(new Product(
+                "B013",
+                "The Adventures of Sherlock Holmes",
+                270000.0,
+                "Classic Literature",
+                "Arthur Conan Doyle",
+                1892,
+                "Hardcover"
+        ));
+
+        listProduct.add(new Product(
+                "B014",
+                "Wuthering Heights",
+                260000.0,
+                "Classic Literature",
+                "Emily Brontë",
+                1847,
+                "Paperback"
+        ));
+
+        listProduct.add(new Product(
+                "B015",
+                "Frankenstein; or, The Modern Prometheus",
+                250000.0,
+                "Classic Literature",
+                "Mary Shelley",
+                1818,
+                "Paperback"
+        ));
+
+        listProduct.add(new Product(
+                "B016",
+                "The Hobbit",
+                280000.0,
+                "Fantasy",
+                "J.R.R. Tolkien",
+                1937,
+                "Hardcover"
+        ));
+
+        listProduct.add(new Product(
+                "B017",
+                "The Lord of the Rings",
+                600000.0,
+                "Fantasy",
+                "J.R.R. Tolkien",
+                1954,
+                "Hardcover"
+        ));
+
     }
 }
