@@ -50,4 +50,5 @@ Class ini berisi GUI dari program, berfungsi sebagai interface program dengan pe
 - Setiap aplikasi dibuka atau ada perubahan data, tabel otomatis akan diperbaharui.
 
 ## Dokumentasi
-![Dokumentasi](Dokumentasi/DokumentasiVideo.mp4)
+https://github.com/user-attachments/assets/673ffb22-0b55-4dbd-bdeb-5d9944f7eab7
+
